@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    --line-of-chars:40;
+    font-size: calc(100vw / (var(--line-of-chars)));
+}
+*/
+img.icon {
+    width: 1em;
+    height: 1em;
+}
+footer {
+    text-align:center;
+}
+
+.v {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* 各OSでゴシック／明朝（Mac, Windows, Linux, iOS, Android） */
+/* 各OSに初期インストールされているフォント
+  Mac:      ヒラギノ系 
+  Windows : Meirio(ゴシック), 游明朝
+  Linux:    ？
+  iOS:      
+  Android:  Noto CJK 系
+*/
+/* 見出しに適したフォント(ゴシック体(ハネや払い無))  */
+.heading {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, 'BIZ UDGothic', 'Noto Suns JP', 'Noto Suns Japanese JP', 'Noto Suns CJK JP', sans-serif;
+}
+/* 文章（本文）に適したフォント(明朝体(ハネや払い有)) */
+.sentence {
+    font-family: 'Hiragino Mincho ProN', '游明朝', 'BIZ UDMincho', 'Noto Serif JP', 'Noto Serif Japanese JP', 'Noto Serif CJK JP', serif;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+}
+/* プログラミングに適した等幅フォント */
+.programming {
+    font-family: 'Ricty', 'DejaVu Sans Mono', monospace;
+}
+/* AA(Ascii Art)に適したフォント */
+.ascii-art {
+    font-family: 'aahub';
+}
+
+@font-face {
+  font-family: "Saitamaar";
+  src: url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff2") format("woff2"),
+    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff") format("woff"),
+    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.ttf") format("ttf");
+  font-display: swap;
+}
+.Saitamaar {
+  font-family: "Saitamaar";
+  white-space: pre;
+  font-size: 16px;
+  line-height: 18px;
+  overflow:auto;
+  white-space:nowrap;
+}
+
+.aahub {
+  font-family: "aahub";
+  white-space: pre;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.NotoSans {
+    font-family: 'aahub', 'monapo', sans-serif;
+}
+.NotoSerif {
+    font-family: '', sans-serif;
+}
+.UDG {
+    font-family: '', sans-serif;
+}
+.UDM {
+    font-family: '', sans-serif;
+}

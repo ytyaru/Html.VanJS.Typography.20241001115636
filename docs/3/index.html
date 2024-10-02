@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="ytyaru">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">
+<link rel="icon" href="../asset/image/author/ytyaru.png">
+<link rel="stylesheet" href="css/font-family.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">-->
+<link rel="stylesheet" href="../lib/highlight/11.10.0/default.min.css">
+<link rel="stylesheet" href="../lib/highlight/11.10.0/a11y-light.min.css">
+<link rel="stylesheet" href="../lib/highlight/11.10.0/a11y-dark.min.css">
+<link rel="stylesheet" type="text/css" href="hljs.css" id="link-hljs-css">
+     
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>-->
+<script src="../lib/highlight/11.10.0/highlight.min.js"></script>
+<script src="js/main.js"></script>
+<script>hljs.highlightAll();</script>
+<script>
+function changeHljsSytle(cssFileName){document.getElementById('link-hljs-css').href = `../lib/highlight/11.10.0/${cssFileName}`;}
+window.addEventListener('DOMContentLoaded', async(e)=>{
+});
+</script>
+</head>
+
+<body>
+    <select onchange="changeHljsSytle(value);">
+       <option value="default.min.css">標準</option>
+       <option value="a11y-dark.min.css">Dark</option>
+       <option value="a11y-light.min.css">Light</option>
+    </select>
+
+    <h1 class="heading">見出し：ゴシック体</h1>
+    <p class="sentence">本文：明朝体</p>
+    <pre><code class="code">console.log('Hello JS !!'); // 等幅</code></pre>
+    <pre class="aa">
+ ∧＿∧
+（　´∀｀）＜MSPゴシック風（aahub-light）
+（　　　　）
+｜ ｜　|
+（_＿）＿）
+    </pre>
+    <pre><code class="javascript">console.log('Hello JS !!'); // 等幅</code></pre>
+    <pre><code class="code javascript">console.log('Hello JS !!'); // 等幅</code></pre>
+    <pre><code class="hljs">console.log('Hello JS !!'); // 等幅</code></pre>
+    <p>本文中に<code class="hljs">console.log('Hello JS !!');</code>コードを入れる。<p>
+    <p>本文中に<code id="code-0" class="hljs"></code>コードを入れる。<p>
+    <p>本文中に<code data-lang="js">console.log('Hello JS !!');</code>コードを入れる。<p>
+</body>
+</html>
+<!-- https://coliss.com/articles/build-websites/operation/work/html-template-for-web-apps-or-sites.html -->
+<!-- https://coliss.com/articles/build-websites/operation/work/html5-template-for-2018.html -->
